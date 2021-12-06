@@ -21,9 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: scene as! UIWindowScene)
         
         let  tabBar = PLWTabBarViewController()
-        
         window?.rootViewController = tabBar
-        
         window?.makeKeyAndVisible()
         
      
