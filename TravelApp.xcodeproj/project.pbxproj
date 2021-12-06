@@ -10,8 +10,6 @@
 		B96B581D7037AB54C366B266 /* Pods_TravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F22CE6636B346D5A572546 /* Pods_TravelApp.framework */; };
 		E949193B275E073E00B6191D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E949193A275E073E00B6191D /* AppDelegate.swift */; };
 		E949193D275E073E00B6191D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E949193C275E073E00B6191D /* SceneDelegate.swift */; };
-		E949193F275E073E00B6191D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E949193E275E073E00B6191D /* ViewController.swift */; };
-		E9491942275E073E00B6191D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9491940275E073E00B6191D /* Main.storyboard */; };
 		E9491944275E074300B6191D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9491943275E074300B6191D /* Assets.xcassets */; };
 		E9491947275E074300B6191D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9491945275E074300B6191D /* LaunchScreen.storyboard */; };
 		E9491950275E0AE300B6191D /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E949194F275E0AE300B6191D /* Global.swift */; };
@@ -30,8 +28,6 @@
 		E9491937275E073E00B6191D /* TravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E949193A275E073E00B6191D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E949193C275E073E00B6191D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E949193E275E073E00B6191D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E9491941275E073E00B6191D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9491943275E074300B6191D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9491946275E074300B6191D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9491948275E074300B6191D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,8 +85,6 @@
 				E949194E275E0AAC00B6191D /* common */,
 				E949193A275E073E00B6191D /* AppDelegate.swift */,
 				E949193C275E073E00B6191D /* SceneDelegate.swift */,
-				E949193E275E073E00B6191D /* ViewController.swift */,
-				E9491940275E073E00B6191D /* Main.storyboard */,
 				E9491943275E074300B6191D /* Assets.xcassets */,
 				E9491945275E074300B6191D /* LaunchScreen.storyboard */,
 				E9491948275E074300B6191D /* Info.plist */,
@@ -173,7 +167,6 @@
 				23E06202B7718FDDA654ED78 /* Pods-TravelApp.debug.xcconfig */,
 				5AAD53E0C3B2B8AECECE35C8 /* Pods-TravelApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -240,7 +233,6 @@
 			files = (
 				E9491947275E074300B6191D /* LaunchScreen.storyboard in Resources */,
 				E9491944275E074300B6191D /* Assets.xcassets in Resources */,
-				E9491942275E073E00B6191D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +289,6 @@
 				E9491950275E0AE300B6191D /* Global.swift in Sources */,
 				E949195A275E0BE800B6191D /* PLWHomeViewController.swift in Sources */,
 				E949195E275E0C0E00B6191D /* PLWPlanViewController.swift in Sources */,
-				E949193F275E073E00B6191D /* ViewController.swift in Sources */,
 				E9491958275E0BC300B6191D /* PLWBaseViewController.swift in Sources */,
 				E9491962275E0C6400B6191D /* PLWTabBarViewController.swift in Sources */,
 				E9491960275E0C5400B6191D /* PLWNavViewController.swift in Sources */,
@@ -309,14 +300,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E9491940275E073E00B6191D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E9491941275E073E00B6191D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E9491945275E074300B6191D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -458,7 +441,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "游记";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -489,7 +471,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "游记";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
