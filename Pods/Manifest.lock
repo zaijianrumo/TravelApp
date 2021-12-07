@@ -3,6 +3,12 @@ PODS:
   - FSPagerView (0.8.3)
   - IQKeyboardManagerSwift (6.5.9)
   - Kingfisher (4.10.1)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
   - SnapKit (4.2.0)
   - SwiftyFitsize (1.4.0)
 
@@ -11,6 +17,8 @@ DEPENDENCIES:
   - FSPagerView
   - IQKeyboardManagerSwift
   - Kingfisher
+  - RxCocoa (= 6.2.0)
+  - RxSwift (= 6.2.0)
   - SnapKit
   - SwiftyFitsize
 
@@ -20,6 +28,9 @@ SPEC REPOS:
     - FSPagerView
     - IQKeyboardManagerSwift
     - Kingfisher
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SnapKit
     - SwiftyFitsize
 
@@ -28,9 +39,12 @@ SPEC CHECKSUMS:
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftyFitsize: 7b12144a362b0c233d8fb8817e54988a60d92b02
 
-PODFILE CHECKSUM: c139887101bcb5260b71a93b7e0794748576b195
+PODFILE CHECKSUM: e73f1020764a42a4f771acb6da5096d0e49712a8
 
 COCOAPODS: 1.11.2

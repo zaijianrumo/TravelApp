@@ -10,6 +10,9 @@ import FSPagerView
 import SnapKit
 import Kingfisher
 import SwiftyFitsize
+import RxSwift
+import RxCocoa
+import RxRelay
 class PLWHomeViewController: PLWBaseViewController {
 
     private lazy var pagerView: FSPagerView = {
@@ -22,19 +25,41 @@ class PLWHomeViewController: PLWBaseViewController {
         return pagerView
     }()
     
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
  
         super.viewDidLoad()
-        view.addSubview(pagerView)
+//        view.addSubview(pagerView)
+//
+//        let height:CGFloat = 240~
+//        pagerView.snp.makeConstraints { make in
+//            make.left.top.right.equalToSuperview()
+//            make.height.equalTo(height)
+//        }
         
-        let height:CGFloat = 240~
-        pagerView.snp.makeConstraints { make in
-            make.left.top.right.equalToSuperview()
-            make.height.equalTo(height)
-        }  
+        let  button = UIButton(type: .custom)
+        button.setTitle("点我啊", for: .normal)
+        button.setTitleColor(UIColor.red, for: .normal)
+        button.frame = CGRect(x: 100, y: 300, width: 130, height: 50)
+        self.view.addSubview(button)
+        button.rx.tap.subscribe { wev in
+            print("xxxxxxx\(wev.event)")
+            
+        }.disposed(by: disposeBag)
+        
+        
+        
+        
+        
+        
     }
-    
+
 }
+
+
+
+
 extension PLWHomeViewController: FSPagerViewDelegate, FSPagerViewDataSource {
     // - FSPagerView Delegate
     func numberOfItems(in pagerView: FSPagerView) -> Int {

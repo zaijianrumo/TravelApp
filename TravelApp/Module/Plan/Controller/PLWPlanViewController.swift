@@ -10,8 +10,6 @@ import DNSPageView
 import SwiftyFitsize
 class PLWPlanViewController: PLWBaseViewController {
 
-   
-    
     private lazy var pageViewManager: PageViewManager = {
         // 创建 PageStyle，设置样式
         let style = PageStyle()
@@ -36,10 +34,9 @@ class PLWPlanViewController: PLWBaseViewController {
         return PageViewManager(style: style, titles: titles, childViewControllers: childViewControllers)
     }()
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         // 单独设置 titleView 的 frame
         navigationItem.titleView = pageViewManager.titleView
@@ -49,7 +46,7 @@ class PLWPlanViewController: PLWBaseViewController {
         let contentView = pageViewManager.contentView
         view.addSubview(pageViewManager.contentView)
         contentView.snp.makeConstraints { (maker) in
-            maker.edges.equalToSuperview()
+            maker.edges.equalTo(self.view.usnp.edges)
         }
         
         if #available(iOS 11, *) {

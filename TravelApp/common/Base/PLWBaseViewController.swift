@@ -13,8 +13,13 @@ class PLWBaseViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.white
-    
-
+        if #available(iOS 11.0, *) {
+            UIScrollView.appearance().contentInsetAdjustmentBehavior = .never
+        } else {
+            automaticallyAdjustsScrollViewInsets = false
+        }
+        
+        
         
     }
     
