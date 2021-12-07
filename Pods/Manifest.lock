@@ -1,16 +1,36 @@
 PODS:
+  - DNSPageView (2.1.0)
+  - FSPagerView (0.8.3)
+  - IQKeyboardManagerSwift (6.5.9)
+  - Kingfisher (4.10.1)
   - SnapKit (4.2.0)
+  - SwiftyFitsize (1.4.0)
 
 DEPENDENCIES:
+  - DNSPageView
+  - FSPagerView
+  - IQKeyboardManagerSwift
+  - Kingfisher
   - SnapKit
+  - SwiftyFitsize
 
 SPEC REPOS:
   trunk:
+    - DNSPageView
+    - FSPagerView
+    - IQKeyboardManagerSwift
+    - Kingfisher
     - SnapKit
+    - SwiftyFitsize
 
 SPEC CHECKSUMS:
+  DNSPageView: 4d77a61f49a5668ec330fb7bd620d81354371ea7
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftyFitsize: 7b12144a362b0c233d8fb8817e54988a60d92b02
 
-PODFILE CHECKSUM: c51da8ac69e887ebf591465440dbf933e72c059c
+PODFILE CHECKSUM: c139887101bcb5260b71a93b7e0794748576b195
 
 COCOAPODS: 1.11.2

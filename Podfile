@@ -12,9 +12,15 @@ target 'TravelApp' do
   #键盘管理
   pod 'IQKeyboardManagerSwift'
   #网络监听
-  pod 'Reachability'
+  #pod 'Reachability'
   #轮播图
   pod 'FSPagerView'
+  #布局适配
+  pod 'SwiftyFitsize'
+  #菜单
+  pod 'DNSPageView'
+  
+  
 
   # Pods for TravelApp
 

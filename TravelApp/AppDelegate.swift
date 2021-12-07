@@ -6,8 +6,9 @@
 //
 
 import UIKit
-
+import SwiftyFitsize
 @main
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
@@ -29,6 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.makeKeyAndVisible()
             
         }
+        SwiftyFitsize.reference(width: 414)
+       
         
         return true
     }
