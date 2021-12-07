@@ -13,6 +13,8 @@ class PLWBaseViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.white
+    
+
         
     }
     

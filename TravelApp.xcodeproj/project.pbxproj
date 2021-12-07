@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B96B581D7037AB54C366B266 /* Pods_TravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F22CE6636B346D5A572546 /* Pods_TravelApp.framework */; };
+		E9069389275F09B200F8BF50 /* PLWPlanContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9069388275F09B200F8BF50 /* PLWPlanContentViewController.swift */; };
 		E949193B275E073E00B6191D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E949193A275E073E00B6191D /* AppDelegate.swift */; };
 		E949193D275E073E00B6191D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E949193C275E073E00B6191D /* SceneDelegate.swift */; };
 		E9491944275E074300B6191D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9491943275E074300B6191D /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		10F22CE6636B346D5A572546 /* Pods_TravelApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E06202B7718FDDA654ED78 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.debug.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5AAD53E0C3B2B8AECECE35C8 /* Pods-TravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.release.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.release.xcconfig"; sourceTree = "<group>"; };
+		E9069388275F09B200F8BF50 /* PLWPlanContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWPlanContentViewController.swift; sourceTree = "<group>"; };
 		E9491937275E073E00B6191D /* TravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E949193A275E073E00B6191D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E949193C275E073E00B6191D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				E949195D275E0C0E00B6191D /* PLWPlanViewController.swift */,
+				E9069388275F09B200F8BF50 /* PLWPlanContentViewController.swift */,
 			);
 			path = Plan;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E949195C275E0C0500B6191D /* PLWMineViewController.swift in Sources */,
+				E9069389275F09B200F8BF50 /* PLWPlanContentViewController.swift in Sources */,
 				E9491950275E0AE300B6191D /* Global.swift in Sources */,
 				E949195A275E0BE800B6191D /* PLWHomeViewController.swift in Sources */,
 				E949195E275E0C0E00B6191D /* PLWPlanViewController.swift in Sources */,
