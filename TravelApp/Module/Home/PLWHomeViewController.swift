@@ -15,6 +15,8 @@ import RxCocoa
 import RxRelay
 class PLWHomeViewController: PLWBaseViewController {
 
+    public let disposeBag = DisposeBag()
+    
     private lazy var pagerView: FSPagerView = {
         let pagerView = FSPagerView()
         pagerView.delegate = self
@@ -25,8 +27,7 @@ class PLWHomeViewController: PLWBaseViewController {
         return pagerView
     }()
     
-    let disposeBag = DisposeBag()
-    
+ 
     override func viewDidLoad() {
  
         super.viewDidLoad()
@@ -37,22 +38,59 @@ class PLWHomeViewController: PLWBaseViewController {
 //            make.left.top.right.equalToSuperview()
 //            make.height.equalTo(height)
 //        }
+        let nameLable = UILabel()
+        nameLable.font = UIFont.systemFont(ofSize: 14)
+        nameLable.textColor = UIColor.black
+        view.addSubview(nameLable)
+        nameLable.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.left.equalToSuperview().offset(10)
+        }
         
         let  button = UIButton(type: .custom)
         button.setTitle("点我啊", for: .normal)
         button.setTitleColor(UIColor.red, for: .normal)
-        button.frame = CGRect(x: 100, y: 300, width: 130, height: 50)
+        button.frame = CGRect(x: 100, y: 200, width: 130, height: 50)
         self.view.addSubview(button)
-        button.rx.tap.subscribe { wev in
-            print("xxxxxxx\(wev.event)")
-            
+        button.rx.tap.subscribe { _ in
+            print("安安点击")
+        }.disposed(by: disposeBag)
+
+        
+       let textField = UITextField()
+        textField.frame = CGRect(x: 100, y: 300, width: 130, height: 50)
+        textField.backgroundColor = UIColor.red
+       view.addSubview(textField)
+        textField.rx.text.subscribe { (event:Event<String?>) in
+            print(event.element!!)
         }.disposed(by: disposeBag)
         
         
+        ///数据绑定
+        textField.rx.text.bind(to: nameLable.rx.text).disposed(by: disposeBag)
+        
+//        //kvo
+        nameLable.rx.observe(String.self, "text").subscribe { str in
+            self.title = str
+        }.disposed(by: disposeBag)
+        //UIScrollView的滚动
+        let scrollView = UIScrollView()
+        scrollView.contentSize = CGSize(width: 100, height: 400)
+        scrollView.rx.contentOffset.subscribe { (point: CGPoint) in
+            
+        }.disposed(by: disposeBag)
+
+        
+        
+
         
         
         
         
+        
+        
+        
+//
     }
 
 }

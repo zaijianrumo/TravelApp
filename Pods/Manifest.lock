@@ -1,8 +1,16 @@
 PODS:
+  - Alamofire (4.9.1)
   - DNSPageView (2.1.0)
   - FSPagerView (0.8.3)
+  - HandyJSON (5.0.2)
   - IQKeyboardManagerSwift (6.5.9)
   - Kingfisher (4.10.1)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Result (4.1.0)
   - RxCocoa (6.2.0):
     - RxRelay (= 6.2.0)
     - RxSwift (= 6.2.0)
@@ -15,8 +23,10 @@ PODS:
 DEPENDENCIES:
   - DNSPageView
   - FSPagerView
+  - HandyJSON
   - IQKeyboardManagerSwift
   - Kingfisher
+  - Moya
   - RxCocoa (= 6.2.0)
   - RxSwift (= 6.2.0)
   - SnapKit
@@ -24,10 +34,14 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - DNSPageView
     - FSPagerView
+    - HandyJSON
     - IQKeyboardManagerSwift
     - Kingfisher
+    - Moya
+    - Result
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -35,16 +49,20 @@ SPEC REPOS:
     - SwiftyFitsize
 
 SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   DNSPageView: 4d77a61f49a5668ec330fb7bd620d81354371ea7
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftyFitsize: 7b12144a362b0c233d8fb8817e54988a60d92b02
 
-PODFILE CHECKSUM: e73f1020764a42a4f771acb6da5096d0e49712a8
+PODFILE CHECKSUM: e7215bd9cf42cf56b593b4c5f88b6c676b559ce9
 
 COCOAPODS: 1.11.2
