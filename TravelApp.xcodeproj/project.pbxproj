@@ -29,6 +29,7 @@
 		E949195E275E0C0E00B6191D /* PLWPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E949195D275E0C0E00B6191D /* PLWPlanViewController.swift */; };
 		E9491960275E0C5400B6191D /* PLWNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E949195F275E0C5400B6191D /* PLWNavViewController.swift */; };
 		E9491962275E0C6400B6191D /* PLWTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9491961275E0C6400B6191D /* PLWTabBarViewController.swift */; };
+		E9EA64A127B4E6AD00E94C8E /* PLWVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EA64A027B4E6AD00E94C8E /* PLWVideoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		E949195D275E0C0E00B6191D /* PLWPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWPlanViewController.swift; sourceTree = "<group>"; };
 		E949195F275E0C5400B6191D /* PLWNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWNavViewController.swift; sourceTree = "<group>"; };
 		E9491961275E0C6400B6191D /* PLWTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWTabBarViewController.swift; sourceTree = "<group>"; };
+		E9EA64A027B4E6AD00E94C8E /* PLWVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWVideoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,7 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				E9491956275E0B8400B6191D /* Login&Regist */,
-				E9491955275E0B7900B6191D /* Publish */,
+				E9491955275E0B7900B6191D /* Video */,
 				E9491954275E0B6B00B6191D /* Plan */,
 				E9491953275E0B6600B6191D /* Mine */,
 				E9491952275E0B5E00B6191D /* Home */,
@@ -223,11 +225,12 @@
 			path = Plan;
 			sourceTree = "<group>";
 		};
-		E9491955275E0B7900B6191D /* Publish */ = {
+		E9491955275E0B7900B6191D /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				E9EA64A027B4E6AD00E94C8E /* PLWVideoViewController.swift */,
 			);
-			path = Publish;
+			path = Video;
 			sourceTree = "<group>";
 		};
 		E9491956275E0B8400B6191D /* Login&Regist */ = {
@@ -371,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9EA64A127B4E6AD00E94C8E /* PLWVideoViewController.swift in Sources */,
 				E9439B7F2761AEA90071CF7D /* NetworkManager.swift in Sources */,
 				E949195C275E0C0500B6191D /* PLWMineViewController.swift in Sources */,
 				E906938D275F394300F8BF50 /* PLWPlanContentCollectionViewCell.swift in Sources */,

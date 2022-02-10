@@ -14,7 +14,7 @@ class PLWPlanContentViewController: PLWBaseViewController {
     
     lazy var collectionView:UICollectionView = {
         let layout = UICollectionViewFlowLayout.init()
-        layout.itemSize = CGSize(width: KScree_width/2, height:230~)
+        layout.itemSize = CGSize(width: SCREEN_WIDTH/2, height:230~)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
         

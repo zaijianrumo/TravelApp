@@ -10,16 +10,10 @@ import FSPagerView
 import SnapKit
 import Kingfisher
 import SwiftyFitsize
-import RxSwift
-import RxCocoa
-import RxRelay
-import Toast_Swift
 
 class PLWHomeViewController: PLWBaseViewController {
 
-    public let disposeBag = DisposeBag()
-    
-    
+
     private lazy var pagerView: FSPagerView = {
         let pagerView = FSPagerView()
         pagerView.delegate = self
@@ -34,84 +28,15 @@ class PLWHomeViewController: PLWBaseViewController {
     override func viewDidLoad() {
  
         super.viewDidLoad()
-//        view.addSubview(pagerView)
-//
-//        let height:CGFloat = 240~
-//        pagerView.snp.makeConstraints { make in
-//            make.left.top.right.equalToSuperview()
-//            make.height.equalTo(height)
-//        }
-        let nameLable = UILabel()
-        nameLable.font = UIFont.systemFont(ofSize: 14)
-        nameLable.textColor = UIColor.black
-        view.addSubview(nameLable)
-        nameLable.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.left.equalToSuperview().offset(10)
+        view.addSubview(pagerView)
+
+        let height:CGFloat = 240~
+        pagerView.snp.makeConstraints { make in
+            make.left.right.equalToSuperview()
+            make.top.equalTo(88)
+            make.height.equalTo(height)
         }
-        
-        let  button = UIButton(type: .custom)
-        button.setTitle("点我啊", for: .normal)
-        button.setTitleColor(UIColor.red, for: .normal)
-        button.frame = CGRect(x: 100, y: 200, width: 130, height: 50)
-        self.view.addSubview(button)
-        button.rx.tap.subscribe { _ in
-
-            // 不需要解析模型  只关心网络请求的成功或者失败  ✌️✌️✌️✌️
-//            NetWorkRequest(API.updateAPi(parameters: paraDict)) { responseModel in
-//                print("网络请求成功")
-//            } failureCallback: { (responseModel) in
-//                print("网络请求失败 包括服务器错误和网络异常\(responseModel.code)__\(responseModel.message)")
-//            }
-            
-            
-//          NetWorkRequest(API.searchDefault, modelType: People.self, successCallback: { (model, responseModel) in
-//
-//
-//            }, failureCallback: { (responseModel) in
-//                print("网络请求失败 包括服务器错误和网络异常\(responseModel.code)__\(responseModel.message)")
-//            })
-            
-            
-            
-            
-        }.disposed(by: disposeBag)
-
-        
-       let textField = UITextField()
-        textField.frame = CGRect(x: 100, y: 300, width: 130, height: 50)
-        textField.backgroundColor = UIColor.red
-       view.addSubview(textField)
-        textField.rx.text.subscribe { (event:Event<String?>) in
-            print(event.element!!)
-        }.disposed(by: disposeBag)
-        
-        
-        ///数据绑定
-        textField.rx.text.bind(to: nameLable.rx.text).disposed(by: disposeBag)
-        
-//        //kvo
-        nameLable.rx.observe(String.self, "text").subscribe { str in
-            self.title = str
-        }.disposed(by: disposeBag)
-        //UIScrollView的滚动
-        let scrollView = UIScrollView()
-        scrollView.contentSize = CGSize(width: 100, height: 400)
-        scrollView.rx.contentOffset.subscribe { (point: CGPoint) in
-            
-        }.disposed(by: disposeBag)
-
-        
-        
-
-        
-        
-        
-        
-        
-        
-        
-//
+    
     }
 
 }
@@ -127,7 +52,7 @@ extension PLWHomeViewController: FSPagerViewDelegate, FSPagerViewDataSource {
     
     func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
         let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "ShopBannerCell", at: index)
-        cell.imageView?.kf.setImage(with:URL(string: "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fup.enterdesk.com%2Fedpic_source%2F53%2F0a%2Fda%2F530adad966630fce548cd408237ff200.jpg&refer=http%3A%2F%2Fup.enterdesk.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1641433634&t=ce7df98cdf7b977ede4083210f4865b2"), placeholder: .none, options: .none, progressBlock: { receivedSize, totalSize in
+        cell.imageView?.kf.setImage(with:URL(string: "https://img.lianzhixiu.com/uploads/allimg/202104/9999/db598b8b76.jpg"), placeholder: .none, options: .none, progressBlock: { receivedSize, totalSize in
             
         }, completionHandler: { image, error, cacheType, imageURL in
             

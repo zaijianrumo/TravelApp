@@ -12,30 +12,34 @@ class PLWTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
  
-        
-        UITabBar.appearance().shadowImage = UIImage()
-        UITabBar.appearance().backgroundImage = UIImage()
-        UITabBar.appearance().backgroundColor = UIColor.white
-        
-        
         let home = PLWHomeViewController()
-        addChild(home, title: "首页", normalImg: "", selectImg: "")
+        addChild(home, title: "云村", normalImg: "music.note.list", selectImg: "music.note.list.fill")
         
         let plan = PLWPlanViewController()
-        addChild(plan, title: "计划", normalImg: "", selectImg: "")
+        addChild(plan, title: "计划", normalImg: "bolt.heart", selectImg: "bolt.heart.fill")
         
+        let video = PLWVideoViewController()
+        addChild(video, title: "视频", normalImg: "video", selectImg: "video.fill")
+             
         let mine = PLWMineViewController()
-        addChild(mine, title: "我的", normalImg: "", selectImg: "")
+        addChild(mine, title: "我的", normalImg: "book", selectImg: "book.fill")
  
     }
     
     func addChild(_ childController: UIViewController,title:String,normalImg:String,selectImg:String) {
         
+        childController.navigationItem.title = title;
+        
+        childController.tabBarItem.title  = title
+        
+        childController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .selected)
+        
+        childController.tabBarItem.image = UIImage(systemName: normalImg)
+                
+        childController.tabBarItem.selectedImage = UIImage(systemName: normalImg)?.withRenderingMode(.alwaysOriginal)
+
         let nav = PLWNavViewController(rootViewController: childController)
-        nav.tabBarItem.title = title
-        childController.title = title;
-        childController.tabBarItem.image = UIImage(named: normalImg)?.withRenderingMode(.alwaysOriginal)
-        childController.tabBarItem.selectedImage = UIImage(named: normalImg)?.withRenderingMode(.alwaysOriginal)
+        
         addChild(nav)
         
     }

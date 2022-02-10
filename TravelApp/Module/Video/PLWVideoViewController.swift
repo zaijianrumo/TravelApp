@@ -1,26 +1,18 @@
 //
-//  PLWBaseViewController.swift
+//  PLWVideoViewController.swift
 //  TravelApp
 //
-//  Created by 塔肯 on 2021/12/6.
+//  Created by 塔肯 on 2022/2/10.
 //
 
 import UIKit
 
-class PLWBaseViewController: UIViewController {
+class PLWVideoViewController: PLWBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.groupTableViewBackground
-        if #available(iOS 11.0, *) {
-            UIScrollView.appearance().contentInsetAdjustmentBehavior = .never
-        } else {
-            automaticallyAdjustsScrollViewInsets = false
-        }
-        
-        
-        
+       
     }
     
 
