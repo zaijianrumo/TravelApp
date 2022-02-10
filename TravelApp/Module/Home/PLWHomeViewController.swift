@@ -13,9 +13,12 @@ import SwiftyFitsize
 import RxSwift
 import RxCocoa
 import RxRelay
+import Toast_Swift
+
 class PLWHomeViewController: PLWBaseViewController {
 
     public let disposeBag = DisposeBag()
+    
     
     private lazy var pagerView: FSPagerView = {
         let pagerView = FSPagerView()
@@ -53,7 +56,25 @@ class PLWHomeViewController: PLWBaseViewController {
         button.frame = CGRect(x: 100, y: 200, width: 130, height: 50)
         self.view.addSubview(button)
         button.rx.tap.subscribe { _ in
-            print("安安点击")
+
+            // 不需要解析模型  只关心网络请求的成功或者失败  ✌️✌️✌️✌️
+//            NetWorkRequest(API.updateAPi(parameters: paraDict)) { responseModel in
+//                print("网络请求成功")
+//            } failureCallback: { (responseModel) in
+//                print("网络请求失败 包括服务器错误和网络异常\(responseModel.code)__\(responseModel.message)")
+//            }
+            
+            
+//          NetWorkRequest(API.searchDefault, modelType: People.self, successCallback: { (model, responseModel) in
+//
+//
+//            }, failureCallback: { (responseModel) in
+//                print("网络请求失败 包括服务器错误和网络异常\(responseModel.code)__\(responseModel.message)")
+//            })
+            
+            
+            
+            
         }.disposed(by: disposeBag)
 
         

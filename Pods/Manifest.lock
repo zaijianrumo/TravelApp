@@ -10,6 +10,7 @@ PODS:
   - Moya/Core (13.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.1)
+  - ObjectMapper (4.2.0)
   - Result (4.1.0)
   - RxCocoa (6.2.0):
     - RxRelay (= 6.2.0)
@@ -19,6 +20,8 @@ PODS:
   - RxSwift (6.2.0)
   - SnapKit (4.2.0)
   - SwiftyFitsize (1.4.0)
+  - SwiftyJSON (5.0.1)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
   - DNSPageView
@@ -27,10 +30,13 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - Kingfisher
   - Moya
+  - ObjectMapper
   - RxCocoa (= 6.2.0)
   - RxSwift (= 6.2.0)
   - SnapKit
   - SwiftyFitsize
+  - SwiftyJSON
+  - Toast-Swift
 
 SPEC REPOS:
   trunk:
@@ -41,12 +47,15 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - Kingfisher
     - Moya
+    - ObjectMapper
     - Result
     - RxCocoa
     - RxRelay
     - RxSwift
     - SnapKit
     - SwiftyFitsize
+    - SwiftyJSON
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
@@ -56,13 +65,16 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftyFitsize: 7b12144a362b0c233d8fb8817e54988a60d92b02
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: e7215bd9cf42cf56b593b4c5f88b6c676b559ce9
+PODFILE CHECKSUM: 161b911a8bc34f949800965903a87eba8202b164
 
 COCOAPODS: 1.11.2

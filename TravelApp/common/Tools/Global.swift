@@ -39,13 +39,3 @@ public struct APPConfigKey {
     static  let amapServicesAppKey: NSString = "774fcb6acd37b5c2c301396fafcc60c9"
     
 }
-
-
-// 打印内容，并包含类名和打印所在行数
-func DLog<T>(_ message : T,file : String = #file,function:String = #function, lineNumber : Int = #line) {
-    #if DEBUG
-    let fileName = (file as NSString).lastPathComponent
-    let functionStr = function.split(separator: "(").first
-    print("打印信息：\(fileName):\(functionStr ?? "")():[\(lineNumber)]")
-    #endif
-}

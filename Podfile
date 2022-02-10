@@ -24,8 +24,12 @@ target 'TravelApp' do
   pod 'RxCocoa', '6.2.0'
   #网络请求
   pod 'Moya'
+  pod 'ObjectMapper'
+  pod 'SwiftyJSON'
   pod 'HandyJSON'
-  
+   
+  #提示
+  pod 'Toast-Swift'
   
 
   # Pods for TravelApp
