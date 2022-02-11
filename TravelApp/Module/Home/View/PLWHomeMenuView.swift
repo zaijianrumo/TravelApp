@@ -96,7 +96,4 @@ extension PLWHomeMenuView:UICollectionViewDelegate,UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.menuBlock?(indexPath.row)
     }
-    
-    
-    
 }
