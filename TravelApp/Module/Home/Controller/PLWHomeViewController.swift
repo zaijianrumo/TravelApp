@@ -14,33 +14,66 @@ import SwiftyFitsize
 class PLWHomeViewController: PLWBaseViewController {
 
 
+    var cussearchBar:PLWCustomSearchBar!
+    
+    var homeModel = HomeViewModel()
+    
     private lazy var pagerView: FSPagerView = {
         let pagerView = FSPagerView()
         pagerView.delegate = self
         pagerView.dataSource  = self
         pagerView.isInfinite = true
         pagerView.automaticSlidingInterval =  3
+        pagerView.itemSize = CGSize.init(width: SCREEN_WIDTH - 20, height: 140)
+        pagerView.transformer = FSPagerViewTransformer(type: .zoomOut)
         pagerView.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "ShopBannerCell")
         return pagerView
     }()
     
- 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.cussearchBar.adjustPosition()
+    }
     override func viewDidLoad() {
- 
         super.viewDidLoad()
+        setUI()
+        
+    }
+    func setUI() {
+        
+        ///NOTE:轮播图
         view.addSubview(pagerView)
-
-        let height:CGFloat = 240~
+        let height:CGFloat = 160~
         pagerView.snp.makeConstraints { make in
             make.left.right.equalToSuperview()
-            make.top.equalTo(88)
+            make.top.equalTo(kStatusBarAndNavigationBarHeight+10)
             make.height.equalTo(height)
         }
-    
+        
+        let leftItem = UIBarButtonItem(image: UIImage(named: "menu")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(menuBtnClicked))
+        let rightItem = UIBarButtonItem(image: UIImage(named: "microphone")?.withRenderingMode(.alwaysOriginal), style: UIBarButtonItem.Style.plain, target: self, action: #selector(microphoneBtnClicked))
+        self.cussearchBar = PLWCustomSearchBar(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
+        self.navigationItem.leftBarButtonItem = leftItem
+        self.navigationItem.rightBarButtonItem = rightItem
+        self.navigationItem.titleView = self.cussearchBar
+        
+        let meun:MenusModel = homeModel.sections[0] as! MenusModel
+        let menuView = PLWHomeMenuView(frame: CGRect(x: 0, y: kStatusBarAndNavigationBarHeight + 15 + height, width: SCREEN_WIDTH, height: 80))
+        menuView.menuArray = meun.data
+        self.view.addSubview(menuView)
+        menuView.menuBlock = {
+            (index:Int) in
+            print("点击了第\(index)item")
+        }
+        
+        
     }
+    
+    @objc func menuBtnClicked() {}
+    @objc func microphoneBtnClicked() {}
 
 }
-
+  
 
 
 

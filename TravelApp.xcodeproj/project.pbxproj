@@ -29,7 +29,18 @@
 		E949195E275E0C0E00B6191D /* PLWPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E949195D275E0C0E00B6191D /* PLWPlanViewController.swift */; };
 		E9491960275E0C5400B6191D /* PLWNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E949195F275E0C5400B6191D /* PLWNavViewController.swift */; };
 		E9491962275E0C6400B6191D /* PLWTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9491961275E0C6400B6191D /* PLWTabBarViewController.swift */; };
+		E9AFBFD327B62FF000E33614 /* PLWHomeMenuCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AFBFD227B62FF000E33614 /* PLWHomeMenuCellCollectionViewCell.swift */; };
+		E9AFBFD527B631C000E33614 /* PLWColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AFBFD427B631C000E33614 /* PLWColor.swift */; };
+		E9AFBFD727B635AF00E33614 /* PLWHomeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AFBFD627B635AF00E33614 /* PLWHomeMenuView.swift */; };
 		E9EA64A127B4E6AD00E94C8E /* PLWVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EA64A027B4E6AD00E94C8E /* PLWVideoViewController.swift */; };
+		E9EA64A527B500B400E94C8E /* PLWCustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EA64A427B500B400E94C8E /* PLWCustomSearchBar.swift */; };
+		E9EA64A927B50EE300E94C8E /* mockdata1.json in Resources */ = {isa = PBXBuildFile; fileRef = E9EA64A727B50EE300E94C8E /* mockdata1.json */; };
+		E9EA64AA27B50EE300E94C8E /* mockdata2.json in Resources */ = {isa = PBXBuildFile; fileRef = E9EA64A827B50EE300E94C8E /* mockdata2.json */; };
+		E9EA64AD27B50FA700E94C8E /* PLWHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EA64AC27B50FA700E94C8E /* PLWHomeModel.swift */; };
+		E9EA64B027B5137A00E94C8E /* HomeViewModelSectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EA64AF27B5137A00E94C8E /* HomeViewModelSectionType.swift */; };
+		E9EA64B427B5147A00E94C8E /* HomeViewModelSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EA64B327B5147A00E94C8E /* HomeViewModelSection.swift */; };
+		E9EA64B627B5150700E94C8E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EA64B527B5150700E94C8E /* HomeViewModel.swift */; };
+		E9EA64B827B5191200E94C8E /* MenusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EA64B727B5191200E94C8E /* MenusModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +70,18 @@
 		E949195D275E0C0E00B6191D /* PLWPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWPlanViewController.swift; sourceTree = "<group>"; };
 		E949195F275E0C5400B6191D /* PLWNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWNavViewController.swift; sourceTree = "<group>"; };
 		E9491961275E0C6400B6191D /* PLWTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWTabBarViewController.swift; sourceTree = "<group>"; };
+		E9AFBFD227B62FF000E33614 /* PLWHomeMenuCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWHomeMenuCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		E9AFBFD427B631C000E33614 /* PLWColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWColor.swift; sourceTree = "<group>"; };
+		E9AFBFD627B635AF00E33614 /* PLWHomeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWHomeMenuView.swift; sourceTree = "<group>"; };
 		E9EA64A027B4E6AD00E94C8E /* PLWVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWVideoViewController.swift; sourceTree = "<group>"; };
+		E9EA64A427B500B400E94C8E /* PLWCustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWCustomSearchBar.swift; sourceTree = "<group>"; };
+		E9EA64A727B50EE300E94C8E /* mockdata1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mockdata1.json; sourceTree = "<group>"; };
+		E9EA64A827B50EE300E94C8E /* mockdata2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mockdata2.json; sourceTree = "<group>"; };
+		E9EA64AC27B50FA700E94C8E /* PLWHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWHomeModel.swift; sourceTree = "<group>"; };
+		E9EA64AF27B5137A00E94C8E /* HomeViewModelSectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelSectionType.swift; sourceTree = "<group>"; };
+		E9EA64B327B5147A00E94C8E /* HomeViewModelSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelSection.swift; sourceTree = "<group>"; };
+		E9EA64B527B5150700E94C8E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E9EA64B727B5191200E94C8E /* MenusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenusModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +141,7 @@
 			children = (
 				E949194F275E0AE300B6191D /* Global.swift */,
 				E90695D527605AEC00F8BF50 /* PLWCommonView.swift */,
+				E9AFBFD427B631C000E33614 /* PLWColor.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -178,6 +201,7 @@
 		E949194E275E0AAC00B6191D /* common */ = {
 			isa = PBXGroup;
 			children = (
+				E9EA64A627B50ECA00E94C8E /* Resource */,
 				E9439B7A2761AE980071CF7D /* NetWork */,
 				E90695D227605A9D00F8BF50 /* Tools */,
 				E9491963275E112F00B6191D /* Base */,
@@ -200,7 +224,10 @@
 		E9491952275E0B5E00B6191D /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				E9491959275E0BE800B6191D /* PLWHomeViewController.swift */,
+				E9EA64AE27B5136600E94C8E /* ViewModel */,
+				E9EA64AB27B50F9300E94C8E /* Model */,
+				E9EA64A327B5009100E94C8E /* Controller */,
+				E9EA64A227B5008C00E94C8E /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -248,6 +275,52 @@
 				E9491961275E0C6400B6191D /* PLWTabBarViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		E9EA64A227B5008C00E94C8E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9EA64A427B500B400E94C8E /* PLWCustomSearchBar.swift */,
+				E9AFBFD227B62FF000E33614 /* PLWHomeMenuCellCollectionViewCell.swift */,
+				E9AFBFD627B635AF00E33614 /* PLWHomeMenuView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E9EA64A327B5009100E94C8E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E9491959275E0BE800B6191D /* PLWHomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E9EA64A627B50ECA00E94C8E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E9EA64A727B50EE300E94C8E /* mockdata1.json */,
+				E9EA64A827B50EE300E94C8E /* mockdata2.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		E9EA64AB27B50F9300E94C8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9EA64AC27B50FA700E94C8E /* PLWHomeModel.swift */,
+				E9EA64B727B5191200E94C8E /* MenusModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9EA64AE27B5136600E94C8E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E9EA64AF27B5137A00E94C8E /* HomeViewModelSectionType.swift */,
+				E9EA64B327B5147A00E94C8E /* HomeViewModelSection.swift */,
+				E9EA64B527B5150700E94C8E /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FD6EB3D5C8CCFDDA6681487E /* Pods */ = {
@@ -320,6 +393,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9EA64AA27B50EE300E94C8E /* mockdata2.json in Resources */,
+				E9EA64A927B50EE300E94C8E /* mockdata1.json in Resources */,
 				E9491947275E074300B6191D /* LaunchScreen.storyboard in Resources */,
 				E9491944275E074300B6191D /* Assets.xcassets in Resources */,
 			);
@@ -374,18 +449,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9EA64B827B5191200E94C8E /* MenusModel.swift in Sources */,
 				E9EA64A127B4E6AD00E94C8E /* PLWVideoViewController.swift in Sources */,
+				E9EA64B027B5137A00E94C8E /* HomeViewModelSectionType.swift in Sources */,
+				E9AFBFD527B631C000E33614 /* PLWColor.swift in Sources */,
+				E9AFBFD327B62FF000E33614 /* PLWHomeMenuCellCollectionViewCell.swift in Sources */,
 				E9439B7F2761AEA90071CF7D /* NetworkManager.swift in Sources */,
+				E9EA64B627B5150700E94C8E /* HomeViewModel.swift in Sources */,
 				E949195C275E0C0500B6191D /* PLWMineViewController.swift in Sources */,
 				E906938D275F394300F8BF50 /* PLWPlanContentCollectionViewCell.swift in Sources */,
 				E90695E02760838300F8BF50 /* PLWPeoPleTableViewCell.swift in Sources */,
 				E90695D627605AEC00F8BF50 /* PLWCommonView.swift in Sources */,
 				E9069389275F09B200F8BF50 /* PLWPlanContentViewController.swift in Sources */,
 				E9491950275E0AE300B6191D /* Global.swift in Sources */,
+				E9EA64AD27B50FA700E94C8E /* PLWHomeModel.swift in Sources */,
 				E9439B802761AEA90071CF7D /* MoyaConfig.swift in Sources */,
+				E9EA64A527B500B400E94C8E /* PLWCustomSearchBar.swift in Sources */,
 				E949195A275E0BE800B6191D /* PLWHomeViewController.swift in Sources */,
 				E90695DC2760814800F8BF50 /* People.swift in Sources */,
 				E9069392275F3DA200F8BF50 /* PLWModel.swift in Sources */,
+				E9EA64B427B5147A00E94C8E /* HomeViewModelSection.swift in Sources */,
+				E9AFBFD727B635AF00E33614 /* PLWHomeMenuView.swift in Sources */,
 				E949195E275E0C0E00B6191D /* PLWPlanViewController.swift in Sources */,
 				E9491958275E0BC300B6191D /* PLWBaseViewController.swift in Sources */,
 				E9491962275E0C6400B6191D /* PLWTabBarViewController.swift in Sources */,

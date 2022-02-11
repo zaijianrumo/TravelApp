@@ -19,16 +19,12 @@ public let SCREEN_WIDTH = UIScreen.main.bounds.size.width
 public let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
 
 public var isFullScreen: Bool {
-    if #available(iOS 11, *) {
-          guard let w = UIApplication.shared.delegate?.window, let unwrapedWindow = w else {
-              return false
-          }
-          if unwrapedWindow.safeAreaInsets.left > 0 || unwrapedWindow.safeAreaInsets.bottom > 0 {
-              print(unwrapedWindow.safeAreaInsets)
-              return true
-          }
+    guard #available(iOS 11.0, *) else {
+        return false
     }
-    return false
+    
+    let isX = UIApplication.shared.windows[0].safeAreaInsets.bottom > 0
+    return isX
 }
 public let kStatusBarHeight : CGFloat = isFullScreen ? 44 : 20
 public let kNavigationBarHeight : CGFloat =  44
