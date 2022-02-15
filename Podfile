@@ -30,6 +30,7 @@ target 'TravelApp' do
    
   #提示
   pod 'Toast-Swift'
+  pod 'SVProgressHUD'
   
 
   # Pods for TravelApp

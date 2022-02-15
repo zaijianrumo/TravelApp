@@ -29,6 +29,7 @@ class PLWHomeViewController: PLWBaseViewController {
         tableView.estimatedSectionHeaderHeight = 0;
         tableView.estimatedSectionFooterHeight = 0;
         tableView.register(ScrollBannerCell.self, forCellReuseIdentifier: ScrollBannerCell.identifier)
+        tableView.register(CircleMenusCell.self, forCellReuseIdentifier: CircleMenusCell.identifier)
         return tableView
     }()
 
@@ -52,15 +53,6 @@ class PLWHomeViewController: PLWBaseViewController {
         self.navigationItem.rightBarButtonItem = rightItem
         self.navigationItem.titleView = self.cussearchBar
         
-//        let meun:MenusModel = homeModel.sections[0] as! MenusModel
-//        let menuView = PLWHomeMenuView(frame: CGRect(x: 0, y: kStatusBarAndNavigationBarHeight + 15 + height, width: SCREEN_WIDTH, height: 80))
-//        menuView.menuArray = meun.data
-//        self.view.addSubview(menuView)
-//        menuView.menuBlock = {
-//            (index:Int) in
-//            print("点击了第\(index)item")
-//        }
-//
         self.view.addSubview(self.tableView)
         self.tableView.snp.makeConstraints { make in
             make.right.left.equalToSuperview()
@@ -78,16 +70,32 @@ class PLWHomeViewController: PLWBaseViewController {
   
 
 extension PLWHomeViewController: UITableViewDelegate,UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ScrollBannerCell.identifier, for: indexPath) as! ScrollBannerCell
-        return cell
         
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: ScrollBannerCell.identifier, for: indexPath) as! ScrollBannerCell
+            return cell
+        }else {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: CircleMenusCell.identifier, for: indexPath) as! CircleMenusCell
+            return cell
+        }
+ 
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140
+        if indexPath.section == 0 {
+            return 140
+        }else {
+            return 80
+        }
     }
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.01
@@ -95,8 +103,7 @@ extension PLWHomeViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.01
     }
-    
-    
+
     
 }
 

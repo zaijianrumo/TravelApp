@@ -19,6 +19,7 @@ PODS:
     - RxSwift (= 6.2.0)
   - RxSwift (6.2.0)
   - SnapKit (4.2.0)
+  - SVProgressHUD (2.2.5)
   - SwiftyFitsize (1.4.0)
   - SwiftyJSON (5.0.1)
   - Toast-Swift (5.0.1)
@@ -34,6 +35,7 @@ DEPENDENCIES:
   - RxCocoa (= 6.2.0)
   - RxSwift (= 6.2.0)
   - SnapKit
+  - SVProgressHUD
   - SwiftyFitsize
   - SwiftyJSON
   - Toast-Swift
@@ -53,6 +55,7 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - SnapKit
+    - SVProgressHUD
     - SwiftyFitsize
     - SwiftyJSON
     - Toast-Swift
@@ -71,10 +74,11 @@ SPEC CHECKSUMS:
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyFitsize: 7b12144a362b0c233d8fb8817e54988a60d92b02
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 161b911a8bc34f949800965903a87eba8202b164
+PODFILE CHECKSUM: df2f9a8f6df48706a5a11d759cbd3a87308c2b98
 
 COCOAPODS: 1.11.2

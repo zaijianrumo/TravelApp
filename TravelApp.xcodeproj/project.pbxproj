@@ -12,9 +12,6 @@
 		E906938D275F394300F8BF50 /* PLWPlanContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E906938C275F394300F8BF50 /* PLWPlanContentCollectionViewCell.swift */; };
 		E9069392275F3DA200F8BF50 /* PLWModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9069391275F3DA200F8BF50 /* PLWModel.swift */; };
 		E90695D627605AEC00F8BF50 /* PLWCommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90695D527605AEC00F8BF50 /* PLWCommonView.swift */; };
-		E90695DC2760814800F8BF50 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90695DB2760814800F8BF50 /* People.swift */; };
-		E90695DE2760821300F8BF50 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90695DD2760821300F8BF50 /* PeopleViewModel.swift */; };
-		E90695E02760838300F8BF50 /* PLWPeoPleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90695DF2760838300F8BF50 /* PLWPeoPleTableViewCell.swift */; };
 		E9439B7E2761AEA90071CF7D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9439B7B2761AEA90071CF7D /* API.swift */; };
 		E9439B7F2761AEA90071CF7D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9439B7C2761AEA90071CF7D /* NetworkManager.swift */; };
 		E9439B802761AEA90071CF7D /* MoyaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9439B7D2761AEA90071CF7D /* MoyaConfig.swift */; };
@@ -29,6 +26,7 @@
 		E949195E275E0C0E00B6191D /* PLWPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E949195D275E0C0E00B6191D /* PLWPlanViewController.swift */; };
 		E9491960275E0C5400B6191D /* PLWNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E949195F275E0C5400B6191D /* PLWNavViewController.swift */; };
 		E9491962275E0C6400B6191D /* PLWTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9491961275E0C6400B6191D /* PLWTabBarViewController.swift */; };
+		E9604D6927BB3E2700D9520D /* PLWShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9604D6827BB3E2700D9520D /* PLWShopModel.swift */; };
 		E9AFBFD327B62FF000E33614 /* PLWHomeMenuCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AFBFD227B62FF000E33614 /* PLWHomeMenuCellCollectionViewCell.swift */; };
 		E9AFBFD527B631C000E33614 /* PLWColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AFBFD427B631C000E33614 /* PLWColor.swift */; };
 		E9AFBFD727B635AF00E33614 /* PLWHomeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AFBFD627B635AF00E33614 /* PLWHomeMenuView.swift */; };
@@ -52,9 +50,6 @@
 		E906938C275F394300F8BF50 /* PLWPlanContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWPlanContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		E9069391275F3DA200F8BF50 /* PLWModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWModel.swift; sourceTree = "<group>"; };
 		E90695D527605AEC00F8BF50 /* PLWCommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWCommonView.swift; sourceTree = "<group>"; };
-		E90695DB2760814800F8BF50 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
-		E90695DD2760821300F8BF50 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
-		E90695DF2760838300F8BF50 /* PLWPeoPleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWPeoPleTableViewCell.swift; sourceTree = "<group>"; };
 		E9439B7B2761AEA90071CF7D /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E9439B7C2761AEA90071CF7D /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E9439B7D2761AEA90071CF7D /* MoyaConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaConfig.swift; sourceTree = "<group>"; };
@@ -71,6 +66,7 @@
 		E949195D275E0C0E00B6191D /* PLWPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWPlanViewController.swift; sourceTree = "<group>"; };
 		E949195F275E0C5400B6191D /* PLWNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWNavViewController.swift; sourceTree = "<group>"; };
 		E9491961275E0C6400B6191D /* PLWTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWTabBarViewController.swift; sourceTree = "<group>"; };
+		E9604D6827BB3E2700D9520D /* PLWShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWShopModel.swift; sourceTree = "<group>"; };
 		E9AFBFD227B62FF000E33614 /* PLWHomeMenuCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWHomeMenuCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		E9AFBFD427B631C000E33614 /* PLWColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWColor.swift; sourceTree = "<group>"; };
 		E9AFBFD627B635AF00E33614 /* PLWHomeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWHomeMenuView.swift; sourceTree = "<group>"; };
@@ -151,9 +147,7 @@
 		E90695DA2760813900F8BF50 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E90695DB2760814800F8BF50 /* People.swift */,
-				E90695DD2760821300F8BF50 /* PeopleViewModel.swift */,
-				E90695DF2760838300F8BF50 /* PLWPeoPleTableViewCell.swift */,
+				E9604D6827BB3E2700D9520D /* PLWShopModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -237,8 +231,8 @@
 		E9491953275E0B6600B6191D /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				E9604D6727BB3DF600D9520D /* Controller */,
 				E90695DA2760813900F8BF50 /* Model */,
-				E949195B275E0C0500B6191D /* PLWMineViewController.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -277,6 +271,14 @@
 				E9491961275E0C6400B6191D /* PLWTabBarViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		E9604D6727BB3DF600D9520D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E949195B275E0C0500B6191D /* PLWMineViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		E9EA64A227B5008C00E94C8E /* View */ = {
@@ -461,7 +463,6 @@
 				E9EA64B627B5150700E94C8E /* HomeViewModel.swift in Sources */,
 				E949195C275E0C0500B6191D /* PLWMineViewController.swift in Sources */,
 				E906938D275F394300F8BF50 /* PLWPlanContentCollectionViewCell.swift in Sources */,
-				E90695E02760838300F8BF50 /* PLWPeoPleTableViewCell.swift in Sources */,
 				E90695D627605AEC00F8BF50 /* PLWCommonView.swift in Sources */,
 				E9069389275F09B200F8BF50 /* PLWPlanContentViewController.swift in Sources */,
 				E9491950275E0AE300B6191D /* Global.swift in Sources */,
@@ -469,17 +470,16 @@
 				E9439B802761AEA90071CF7D /* MoyaConfig.swift in Sources */,
 				E9EA64A527B500B400E94C8E /* PLWCustomSearchBar.swift in Sources */,
 				E949195A275E0BE800B6191D /* PLWHomeViewController.swift in Sources */,
-				E90695DC2760814800F8BF50 /* People.swift in Sources */,
 				E9069392275F3DA200F8BF50 /* PLWModel.swift in Sources */,
 				E9EA64B427B5147A00E94C8E /* HomeViewModelSection.swift in Sources */,
 				E9AFBFD727B635AF00E33614 /* PLWHomeMenuView.swift in Sources */,
+				E9604D6927BB3E2700D9520D /* PLWShopModel.swift in Sources */,
 				E9AFBFD927B64F7F00E33614 /* PLWHHomeTableViewCell.swift in Sources */,
 				E949195E275E0C0E00B6191D /* PLWPlanViewController.swift in Sources */,
 				E9491958275E0BC300B6191D /* PLWBaseViewController.swift in Sources */,
 				E9491962275E0C6400B6191D /* PLWTabBarViewController.swift in Sources */,
 				E9491960275E0C5400B6191D /* PLWNavViewController.swift in Sources */,
 				E949193B275E073E00B6191D /* AppDelegate.swift in Sources */,
-				E90695DE2760821300F8BF50 /* PeopleViewModel.swift in Sources */,
 				E9439B7E2761AEA90071CF7D /* API.swift in Sources */,
 				E949193D275E073E00B6191D /* SceneDelegate.swift in Sources */,
 			);
