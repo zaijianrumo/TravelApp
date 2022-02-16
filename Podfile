@@ -32,6 +32,10 @@ target 'TravelApp' do
   pod 'Toast-Swift'
   pod 'SVProgressHUD'
   
+  #下拉刷新
+#  pod "ESPullToRefresh"
+   pod 'MJRefresh'
+  
 
   # Pods for TravelApp
 

@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.makeKeyAndVisible()
             
         }
-        SwiftyFitsize.reference(width: 414)
+          SwiftyFitsize.reference(width: 414)
        
         
         return true

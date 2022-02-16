@@ -17,9 +17,7 @@ class PLWHomeViewController: PLWBaseViewController {
     var cussearchBar:PLWCustomSearchBar!
     
     var homeModel = HomeViewModel()
-    
-    
-    
+
     private lazy var tableView:UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.dataSource = self
@@ -45,7 +43,6 @@ class PLWHomeViewController: PLWBaseViewController {
     
     func setUI() {
         
-  
         let leftItem = UIBarButtonItem(image: UIImage(named: "menu")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(menuBtnClicked))
         let rightItem = UIBarButtonItem(image: UIImage(named: "microphone")?.withRenderingMode(.alwaysOriginal), style: UIBarButtonItem.Style.plain, target: self, action: #selector(microphoneBtnClicked))
         self.cussearchBar = PLWCustomSearchBar(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
@@ -64,6 +61,7 @@ class PLWHomeViewController: PLWBaseViewController {
     }
     
     @objc func menuBtnClicked() {}
+    
     @objc func microphoneBtnClicked() {}
 
 }

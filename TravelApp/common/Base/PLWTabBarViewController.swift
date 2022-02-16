@@ -11,6 +11,24 @@ class PLWTabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let appearance = UITabBarAppearance()
+        //tabBar背景颜色
+        appearance.backgroundColor = UIColor.white
+        
+        //tabBaritem title选中状态颜色
+        appearance.stackedLayoutAppearance.normal.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.gray]
+        //tabBaritem title未选中状态颜色
+        appearance.stackedLayoutAppearance.selected.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.black]
+        
+        if #available(iOS 15.0, *) {
+            self.tabBar.scrollEdgeAppearance = appearance
+      
+        } else {
+        }
+        self.tabBar.standardAppearance = appearance
+       
+
  
         let home = PLWHomeViewController()
         addChild(home, title: "云村", normalImg: "music.note.list", selectImg: "music.note.list.fill")
@@ -28,17 +46,15 @@ class PLWTabBarViewController: UITabBarController {
     
     func addChild(_ childController: UIViewController,title:String,normalImg:String,selectImg:String) {
         
+        let nav = PLWNavViewController(rootViewController: childController)
+        
         childController.navigationItem.title = title;
         
         childController.tabBarItem.title  = title
         
-        childController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .selected)
-        
         childController.tabBarItem.image = UIImage(systemName: normalImg)
                 
         childController.tabBarItem.selectedImage = UIImage(systemName: normalImg)?.withRenderingMode(.alwaysOriginal)
-
-        let nav = PLWNavViewController(rootViewController: childController)
         
         addChild(nav)
         

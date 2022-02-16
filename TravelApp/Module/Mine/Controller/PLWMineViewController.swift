@@ -6,47 +6,77 @@
 //
 
 import UIKit
-import SwiftyJSON
-import HandyJSON
-
+import SnapKit
+import MJRefresh
 class PLWMineViewController: PLWBaseViewController {
 
-    private var slidesList: [SlidesModel]?// 穿插的广告数据
-    private var categoryList: [CategoryModel]?// category数据
-    private var advertesPictureModel = AdvertesPictureModel() //客服数据
-    private var shopInfoModle = ShopInfoModel() // 周年庆图片model
-    private var zhouActivityList: [AdvertesPictureModel]? // 周年庆活动
-    private var recommendList: [RecommendModel]? // 推荐商品
-    private var fenModelList : [AdvertesPictureModel] = [] // 三个分组的数据
-    private var fenModle = AdvertesPictureModel() // 周年庆图片model
-    private var belowList: [GoodsModel]? //底部列表数据
+    var shopViewModel = PLWShopVIewModel()
+    
+    // 圆形图标布局
+    private lazy var menusViewFlowLayout: UICollectionViewFlowLayout = {
+        let collectionFlowLayout = UICollectionViewFlowLayout()
+        collectionFlowLayout.minimumLineSpacing = 1
+        collectionFlowLayout.minimumInteritemSpacing = 1
+        collectionFlowLayout.itemSize = CGSize(width: SCREEN_WIDTH / 2 - 1, height: 255)
+        return collectionFlowLayout
+    }()
+    
+    private lazy var colllectonView:UICollectionView = {
+        
+        let collectionView = UICollectionView.init(frame: CGRect(x: 0, y: 0, width: 1, height: 1), collectionViewLayout: self.menusViewFlowLayout)
+        collectionView.register(PLWShopCollectionViewCell.self, forCellWithReuseIdentifier: PLWShopCollectionViewCell.identifier)
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.backgroundColor = UIColor.darkModelColor
+        return collectionView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.addSubview(self.colllectonView)
+        self.colllectonView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        //上拉
+        header.setRefreshingTarget(self, refreshingAction: #selector(headerRereshing))
+        self.colllectonView.mj_header = header
+        //下拉
+        footer.setRefreshingTarget(self, refreshingAction: #selector(footerRereshing))
+        self.colllectonView.mj_footer  = footer
         
-        
-        let paramet = ["lon":"116.47118377685547","lat":"39.91233444213867"]
-        //首页列表数据
-        NetWorkRequest(.homeGoodsList(parameters:paramet), completion: {
-            (jsonString) in
-            //轮播图数据
-            if let slidesList = JSONDeserializer<SlidesModel>.deserializeModelArrayFrom(json: jsonString["data"]["slides"].description) {
-                self.slidesList = slidesList as? [SlidesModel]
-            }
-            print("轮播图数据:\(String(describing: self.slidesList))")
-            for sliModel in self.slidesList! {
-                print(sliModel.image!)
-            }
-  
-        }, failed: {
-             (error)in
-            print("error码:\(error)")
-            
-        }, errorResult: {
-            
-            
-        })
-
+        self.colllectonView.mj_header?.beginRefreshing()
+    
     }
-
+    @objc  func headerRereshing() {
+        self.page = 1
+//         shopViewModel.fetchData()
+        shopViewModel.loadBelowListData(page: self.page, collectionView: self.colllectonView) { (listArr) in
+        }
+    }
+    @objc  func footerRereshing() {
+        self.page += 1
+        shopViewModel.loadBelowListData(page: self.page, collectionView: self.colllectonView){ (listArr) in
+//            print("请求到的数据有\(listArr.count)条")
+        }
+    }
+    
+}
+extension PLWMineViewController:UICollectionViewDelegate,UICollectionViewDataSource {
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return shopViewModel.belowList.count
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PLWShopCollectionViewCell.identifier, for: indexPath) as! PLWShopCollectionViewCell
+        cell.shopModel = shopViewModel.belowList[indexPath.row]
+        return cell
+        
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
+    
+    
 }

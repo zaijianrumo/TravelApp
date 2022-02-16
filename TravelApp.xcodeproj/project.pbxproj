@@ -27,6 +27,8 @@
 		E9491960275E0C5400B6191D /* PLWNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E949195F275E0C5400B6191D /* PLWNavViewController.swift */; };
 		E9491962275E0C6400B6191D /* PLWTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9491961275E0C6400B6191D /* PLWTabBarViewController.swift */; };
 		E9604D6927BB3E2700D9520D /* PLWShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9604D6827BB3E2700D9520D /* PLWShopModel.swift */; };
+		E9604D6C27BB772C00D9520D /* PLWShopVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9604D6B27BB772C00D9520D /* PLWShopVIewModel.swift */; };
+		E9604D6F27BB7B0700D9520D /* PLWShopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9604D6E27BB7B0700D9520D /* PLWShopCollectionViewCell.swift */; };
 		E9AFBFD327B62FF000E33614 /* PLWHomeMenuCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AFBFD227B62FF000E33614 /* PLWHomeMenuCellCollectionViewCell.swift */; };
 		E9AFBFD527B631C000E33614 /* PLWColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AFBFD427B631C000E33614 /* PLWColor.swift */; };
 		E9AFBFD727B635AF00E33614 /* PLWHomeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AFBFD627B635AF00E33614 /* PLWHomeMenuView.swift */; };
@@ -67,6 +69,8 @@
 		E949195F275E0C5400B6191D /* PLWNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWNavViewController.swift; sourceTree = "<group>"; };
 		E9491961275E0C6400B6191D /* PLWTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWTabBarViewController.swift; sourceTree = "<group>"; };
 		E9604D6827BB3E2700D9520D /* PLWShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWShopModel.swift; sourceTree = "<group>"; };
+		E9604D6B27BB772C00D9520D /* PLWShopVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWShopVIewModel.swift; sourceTree = "<group>"; };
+		E9604D6E27BB7B0700D9520D /* PLWShopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWShopCollectionViewCell.swift; sourceTree = "<group>"; };
 		E9AFBFD227B62FF000E33614 /* PLWHomeMenuCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWHomeMenuCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		E9AFBFD427B631C000E33614 /* PLWColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWColor.swift; sourceTree = "<group>"; };
 		E9AFBFD627B635AF00E33614 /* PLWHomeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWHomeMenuView.swift; sourceTree = "<group>"; };
@@ -231,6 +235,8 @@
 		E9491953275E0B6600B6191D /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				E9604D7027BB7BB500D9520D /* View */,
+				E9604D6A27BB771500D9520D /* ViewModel */,
 				E9604D6727BB3DF600D9520D /* Controller */,
 				E90695DA2760813900F8BF50 /* Model */,
 			);
@@ -279,6 +285,22 @@
 				E949195B275E0C0500B6191D /* PLWMineViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		E9604D6A27BB771500D9520D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E9604D6B27BB772C00D9520D /* PLWShopVIewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E9604D7027BB7BB500D9520D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9604D6E27BB7B0700D9520D /* PLWShopCollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E9EA64A227B5008C00E94C8E /* View */ = {
@@ -464,6 +486,7 @@
 				E949195C275E0C0500B6191D /* PLWMineViewController.swift in Sources */,
 				E906938D275F394300F8BF50 /* PLWPlanContentCollectionViewCell.swift in Sources */,
 				E90695D627605AEC00F8BF50 /* PLWCommonView.swift in Sources */,
+				E9604D6F27BB7B0700D9520D /* PLWShopCollectionViewCell.swift in Sources */,
 				E9069389275F09B200F8BF50 /* PLWPlanContentViewController.swift in Sources */,
 				E9491950275E0AE300B6191D /* Global.swift in Sources */,
 				E9EA64AD27B50FA700E94C8E /* PLWHomeModel.swift in Sources */,
@@ -471,6 +494,7 @@
 				E9EA64A527B500B400E94C8E /* PLWCustomSearchBar.swift in Sources */,
 				E949195A275E0BE800B6191D /* PLWHomeViewController.swift in Sources */,
 				E9069392275F3DA200F8BF50 /* PLWModel.swift in Sources */,
+				E9604D6C27BB772C00D9520D /* PLWShopVIewModel.swift in Sources */,
 				E9EA64B427B5147A00E94C8E /* HomeViewModelSection.swift in Sources */,
 				E9AFBFD727B635AF00E33614 /* PLWHomeMenuView.swift in Sources */,
 				E9604D6927BB3E2700D9520D /* PLWShopModel.swift in Sources */,

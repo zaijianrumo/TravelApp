@@ -6,14 +6,22 @@
 //
 
 import UIKit
-
+import MJRefresh
 class PLWBaseViewController: UIViewController {
 
+    
+    //页码
+    var page:Int = 1
+    
+    //MARK: - 刷新
+    var header = MJRefreshNormalHeader()
+    var footer = MJRefreshBackNormalFooter()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.systemBackground
-        
+    
     }
     
 
