@@ -33,7 +33,7 @@ class CategorySmallModel:HandyJSON {
 }
 
 // 客服 model && 周年庆活动 && 分组数据
-struct AdvertesPictureModel: HandyJSON{
+struct AdvertesPictureModel: HandyJSON {
     var TO_PLACE: String?
     var PICTURE_ADDRESS: String?
     var urlType: Int = 0

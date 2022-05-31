@@ -55,9 +55,7 @@ class PLWHomeViewController: PLWBaseViewController {
             make.right.left.equalToSuperview()
             make.bottom.equalTo(-kTabbarHeight)
             make.top.equalTo(kStatusBarAndNavigationBarHeight)
-        }
-        
-        
+        } 
     }
     
     @objc func menuBtnClicked() {}

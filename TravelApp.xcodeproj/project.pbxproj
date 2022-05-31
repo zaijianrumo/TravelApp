@@ -29,6 +29,8 @@
 		E9604D6927BB3E2700D9520D /* PLWShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9604D6827BB3E2700D9520D /* PLWShopModel.swift */; };
 		E9604D6C27BB772C00D9520D /* PLWShopVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9604D6B27BB772C00D9520D /* PLWShopVIewModel.swift */; };
 		E9604D6F27BB7B0700D9520D /* PLWShopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9604D6E27BB7B0700D9520D /* PLWShopCollectionViewCell.swift */; };
+		E9616C2727BDEEB60061715F /* PLWLocationManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9616C2627BDEEB60061715F /* PLWLocationManger.swift */; };
+		E9616C2927BE1DDF0061715F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9616C2827BE1DDF0061715F /* CoreLocation.framework */; };
 		E9AFBFD327B62FF000E33614 /* PLWHomeMenuCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AFBFD227B62FF000E33614 /* PLWHomeMenuCellCollectionViewCell.swift */; };
 		E9AFBFD527B631C000E33614 /* PLWColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AFBFD427B631C000E33614 /* PLWColor.swift */; };
 		E9AFBFD727B635AF00E33614 /* PLWHomeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AFBFD627B635AF00E33614 /* PLWHomeMenuView.swift */; };
@@ -71,6 +73,8 @@
 		E9604D6827BB3E2700D9520D /* PLWShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWShopModel.swift; sourceTree = "<group>"; };
 		E9604D6B27BB772C00D9520D /* PLWShopVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWShopVIewModel.swift; sourceTree = "<group>"; };
 		E9604D6E27BB7B0700D9520D /* PLWShopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWShopCollectionViewCell.swift; sourceTree = "<group>"; };
+		E9616C2627BDEEB60061715F /* PLWLocationManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWLocationManger.swift; sourceTree = "<group>"; };
+		E9616C2827BE1DDF0061715F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E9AFBFD227B62FF000E33614 /* PLWHomeMenuCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWHomeMenuCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		E9AFBFD427B631C000E33614 /* PLWColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWColor.swift; sourceTree = "<group>"; };
 		E9AFBFD627B635AF00E33614 /* PLWHomeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLWHomeMenuView.swift; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9616C2927BE1DDF0061715F /* CoreLocation.framework in Frameworks */,
 				B96B581D7037AB54C366B266 /* Pods_TravelApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +106,7 @@
 		18CE602FE05C92823682CB05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9616C2827BE1DDF0061715F /* CoreLocation.framework */,
 				10F22CE6636B346D5A572546 /* Pods_TravelApp.framework */,
 			);
 			name = Frameworks;
@@ -257,6 +263,7 @@
 		E9491955275E0B7900B6191D /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				E9616C2427BDEE920061715F /* Common */,
 				E9EA64A027B4E6AD00E94C8E /* PLWVideoViewController.swift */,
 			);
 			path = Video;
@@ -301,6 +308,22 @@
 				E9604D6E27BB7B0700D9520D /* PLWShopCollectionViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E9616C2427BDEE920061715F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E9616C2527BDEE9C0061715F /* 定位 */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E9616C2527BDEE9C0061715F /* 定位 */ = {
+			isa = PBXGroup;
+			children = (
+				E9616C2627BDEEB60061715F /* PLWLocationManger.swift */,
+			);
+			path = "定位";
 			sourceTree = "<group>";
 		};
 		E9EA64A227B5008C00E94C8E /* View */ = {
@@ -494,6 +517,7 @@
 				E9EA64A527B500B400E94C8E /* PLWCustomSearchBar.swift in Sources */,
 				E949195A275E0BE800B6191D /* PLWHomeViewController.swift in Sources */,
 				E9069392275F3DA200F8BF50 /* PLWModel.swift in Sources */,
+				E9616C2727BDEEB60061715F /* PLWLocationManger.swift in Sources */,
 				E9604D6C27BB772C00D9520D /* PLWShopVIewModel.swift in Sources */,
 				E9EA64B427B5147A00E94C8E /* HomeViewModelSection.swift in Sources */,
 				E9AFBFD727B635AF00E33614 /* PLWHomeMenuView.swift in Sources */,
@@ -651,6 +675,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TravelApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "游记";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "测试定位";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "测试定位";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -681,6 +707,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TravelApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "游记";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "测试定位";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "测试定位";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

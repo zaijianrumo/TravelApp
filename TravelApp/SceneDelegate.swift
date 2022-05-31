@@ -6,7 +6,8 @@
 //
 
 import UIKit
-
+import AMapLocationKit
+import AMapFoundationKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -23,7 +24,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let  tabBar = PLWTabBarViewController()
         window?.rootViewController = tabBar
         window?.makeKeyAndVisible()
-        
+            
+        AMapServices.shared().apiKey = "63f2f25e479c34b87785ffcefde6a85e"
+        AMapServices.shared().enableHTTPS = true
+        AMapLocationManager.updatePrivacyAgree(.didAgree)
+        AMapLocationManager.updatePrivacyShow(.didShow, privacyInfo: .didContain)
      
     }
 
@@ -32,27 +37,36 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This occurs shortly after the scene enters the background, or when its session is discarded.
         // Release any resources associated with this scene that can be re-created the next time the scene connects.
         // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
+        print("--------------\(#function)")
     }
 
+    //进入前台活动
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        print("--------------\(#function)")
     }
 
+    //将要失去焦点进入后台
     func sceneWillResignActive(_ scene: UIScene) {
         // Called when the scene will move from an active state to an inactive state.
         // This may occur due to temporary interruptions (ex. an incoming phone call).
+        print("--------------\(#function)")
     }
 
+    //将要进入前台
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
+        print("--------------\(#function)")
     }
-
+    
+    //进入后台
     func sceneDidEnterBackground(_ scene: UIScene) {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+        print("--------------\(#function)")
     }
 
 

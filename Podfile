@@ -35,6 +35,11 @@ target 'TravelApp' do
   #下拉刷新
 #  pod "ESPullToRefresh"
    pod 'MJRefresh'
+   #高德地图
+   pod 'AMapLocation-NO-IDFA'
+   #弹框
+   pod 'JXPopupView'
+   
   
 
   # Pods for TravelApp

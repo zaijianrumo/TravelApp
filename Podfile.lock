@@ -1,9 +1,13 @@
 PODS:
   - Alamofire (4.9.1)
+  - AMapFoundation-NO-IDFA (1.6.9)
+  - AMapLocation-NO-IDFA (2.8.0):
+    - AMapFoundation-NO-IDFA (~> 1.6.9)
   - DNSPageView (2.1.0)
   - FSPagerView (0.8.3)
   - HandyJSON (5.0.2)
   - IQKeyboardManagerSwift (6.5.9)
+  - JXPopupView (1.1.0)
   - Kingfisher (4.10.1)
   - MJRefresh (3.7.5)
   - Moya (13.0.1):
@@ -26,10 +30,12 @@ PODS:
   - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
+  - AMapLocation-NO-IDFA
   - DNSPageView
   - FSPagerView
   - HandyJSON
   - IQKeyboardManagerSwift
+  - JXPopupView
   - Kingfisher
   - MJRefresh
   - Moya
@@ -45,10 +51,13 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AMapFoundation-NO-IDFA
+    - AMapLocation-NO-IDFA
     - DNSPageView
     - FSPagerView
     - HandyJSON
     - IQKeyboardManagerSwift
+    - JXPopupView
     - Kingfisher
     - MJRefresh
     - Moya
@@ -65,10 +74,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AMapFoundation-NO-IDFA: cc2ec7a2828ef292358ad594b7ee0ae21a7f097b
+  AMapLocation-NO-IDFA: 9d7ec9b052405356600b59fe0a9a65261bacc54e
   DNSPageView: 4d77a61f49a5668ec330fb7bd620d81354371ea7
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  JXPopupView: 4dc9333d42b9d032b9046908c8a536f80807be8e
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
@@ -83,6 +95,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 8dc9dea667c9f848fdb02c0059b5d22274c65a84
+PODFILE CHECKSUM: 9e7247a1a139bf410c3a5e6e28c7604c4d8f3b16
 
 COCOAPODS: 1.11.2
